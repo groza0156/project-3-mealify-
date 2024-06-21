@@ -1,0 +1,63 @@
+body:has(.mode input:checked) {
+  --back_color: rgb(37, 37, 37);
+  --g_color: rgb(159, 159, 159);
+  --red_color: rgb(193, 126, 31);
+  --hover: rgb(215, 140, 35);
+  --sec_color: white;
+
+  --white: black;
+  --black: white;
+}
+/* bar */
+body:has(.mode input:checked) .bar {
+  background-color: rgb(23, 23, 23);
+}
+body:has(.mode input:checked) .light {
+  display: none;
+}
+body:has(.mode input:checked) .dark {
+  display: block;
+  background-color: transparent;
+}
+
+/* home */
+body:has(.mode input:checked) .home .cont h1 {
+  color: var(--sec_color);
+}
+body:has(.mode input:checked) .home .cont p {
+  color: var(--g_color);
+}
+body:has(.mode input:checked) .home .cont p {
+  color: var(--g_color);
+}
+
+/* chef */
+body:has(.mode input:checked) .chefs {
+  background-color: rgb(32, 32, 32);
+}
+body:has(.mode input:checked) .chef_inner {
+  background-color: rgb(22, 22, 22);
+}
+
+body:has(.mode input:checked) .chef_img::after {
+  background-image: url(../images/team-shape-dark.svg);
+}
+/* contact */
+body:has(.mode input:checked) .contact {
+  background-color: rgb(32, 32, 32);
+}
+body:has(.mode input:checked) .contact_cards .card {
+  background-color: rgb(13, 13, 13);
+}
+body:has(.mode input:checked) .contact_cards .card h3 {
+  color: rgb(173, 173, 173);
+}
+body:has(.mode input:checked) .form {
+  background-color: rgb(23, 23, 23);
+}
+body:has(.mode input:checked) .footer {
+  color: white;
+}
+body:has(.mode input:checked) .footer button {
+  color: black;
+}
